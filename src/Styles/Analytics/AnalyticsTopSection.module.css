@@ -1,0 +1,80 @@
+.topMain {
+  display: flex;
+  flex-direction: row;
+  padding-top: 2%;
+  justify-content: space-between;
+}
+
+.firstCard {
+  display: flex;
+  flex-direction: column;
+  height: 20vh;
+  margin-bottom: 5%;
+}
+
+.firstInner {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  background: linear-gradient(158deg, #472183, #cb1c8d);
+}
+
+.secCard {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  height: 42vh;
+}
+
+.visitText {
+  font-size: 18px;
+  font-weight: 600;
+  font-family: sans-serif;
+  color: #ffffff;
+  letter-spacing: 1.5px;
+}
+
+.numberText {
+  font-size: 25px;
+  font-family: sans-serif;
+  font-weight: 700;
+  color: #ffffff;
+  letter-spacing: 1px;
+}
+
+.sinceText {
+  color: #ffffff;
+  font-weight: 500;
+}
+
+.card {
+  display: flex;
+  width: 20%;
+  flex-direction: column;
+}
+
+.indexStyle {
+  min-height: 100vh;
+  background: #eceff1;
+  background: linear-gradient(
+    158deg,
+    rgba(224, 224, 224) 0%,
+    rgba(233, 237, 254) 100%
+  );
+}
+
+@media (max-width: 575.98px) {
+  .topMain {
+    flex-direction: column;
+  }
+
+  .secCard {
+    width: 100%;
+    margin-bottom: 3%;
+  }
+
+  .card {
+    width: 100%;
+  }
+}

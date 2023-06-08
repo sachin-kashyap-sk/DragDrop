@@ -53,6 +53,29 @@ const initialState = {
       subTitle: "title 10",
     },
   ],
+
+  fieldValue: [
+    {
+      id: nanoid(),
+      fieldText: "Field 1",
+    },
+    {
+      id: nanoid(),
+      fieldText: "Field 2",
+    },
+    {
+      id: nanoid(),
+      fieldText: "Field 3",
+    },
+    {
+      id: nanoid(),
+      fieldText: "Field 4",
+    },
+    {
+      id: nanoid(),
+      fieldText: "Field 5",
+    },
+  ],
 };
 
 export const DragSlice = createSlice({
@@ -71,4 +94,5 @@ export const DragSlice = createSlice({
 
 export const { removeField, addField } = DragSlice.actions;
 export const selectedTitle = (state) => state.Drag.value;
+export const selectedTextField = (state) => state.Drag.fieldValue;
 export default DragSlice.reducer;

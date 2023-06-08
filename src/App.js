@@ -1,17 +1,18 @@
 import React from "react";
-import { DndProvider } from "react-dnd";
-import { HTML5Backend } from "react-dnd-html5-backend";
-import DragDrop from "./Components/DragDrop";
-
-
+import Home from "./Components/Pages/Home";
+import Board from "./Components/Pages/Board";
+import Analytics from "./Components/Pages/Analytics";
+import Product from "./Components/Pages/Products";
+import { Route, Routes } from "react-router-dom";
 
 function App() {
   return (
-    <DndProvider backend={HTML5Backend}>
-      <div>
-        <DragDrop />
-      </div>
-    </DndProvider>
+    <Routes>
+      <Route path="/" element={<Home />}></Route>
+      <Route path="/Board" element={<Board />}></Route>
+      <Route path="/Analytics" element={<Analytics />}></Route>
+      <Route path="/Product" element={<Product />}></Route>
+    </Routes>
   );
 }
 

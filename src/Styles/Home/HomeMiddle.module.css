@@ -1,0 +1,51 @@
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.firstInner {
+  display: flex;
+  flex-direction: column;
+  width: 65%;
+}
+
+.secInner {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+}
+
+.firstContainer {
+  display: flex;
+  min-height: 55vh;
+}
+
+.secContainer {
+  display: flex;
+  min-height: 55vh;
+}
+
+.popularText {
+  font-family: sans-serif;
+  font-size: 18px;
+  color: #000;
+  font-weight: 700;
+}
+@media (max-width: 575.98px) {
+  .container {
+    flex-direction: column;
+    margin-bottom: 15%;
+  }
+
+  .firstInner {
+    margin-bottom: 4%;
+    margin-top: 3%;
+    width: 100%;
+  }
+
+  .secInner {
+    margin-top: 2%;
+    width: 100%;
+  }
+}
